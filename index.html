@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rucoy Online 5</title>
+    <style>
+        /* Adicione estilos CSS aqui */
+        body {
+            font-family: 'Press Start 2P', cursive;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #555;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            background-color: #666;
+        }
+
+        section {
+            padding: 20px;
+            margin: 10px;
+            display: none;
+            text-align: center; /* Centraliza o conteúdo das seções */
+        }
+
+        .rank {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr; /* 3 colunas iguais */
+            align-items: center;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ddd; /* Adiciona uma linha separadora entre as entradas */
+            padding-bottom: 10px; /* Adiciona espaço entre as linhas */
+        }
+
+        .rank span {
+            font-size: 16px;
+            font-weight: bold; /* Deixa a fonte mais grossa */
+        }
+
+        .rank .top {
+            color: #000; /* Cor para a parte do top */
+        }
+
+        .rank .nome {
+            color: #000; /* Cor para a parte do nome */
+        }
+
+        .rank .dados {
+            color: #000; /* Cor para a parte dos dados */
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>RUCOY ONLINE 5</h1>
+    </header>
+
+    <nav>
+        <a onclick="showSection('section1')">-TOP SKILL-</a>
+        <a onclick="showSection('section2')">-TOP LEVEL-</a>
+        <a onclick="showSection('section3')">-TOP GOLD-</a>
+    </nav>
+
+    <section id="section1">
+        <h2>Top skills</h2>
+        <div class="rank">
+            <span class="top">1</span> <span class="nome">GM Lobin</span> <span class="dados">Skill: 999</span>
+        </div>
+        <!-- Adicione mais entradas conforme necessário -->
+        <div class="rank">
+            <span class="top">2</span> <span class="nome">Player</span> <span class="dados">Skill: 888</span>
+        </div>
+
+        <div class="rank">
+            <span class="top">3</span> <span class="nome">Player</span> <span class="dados">Skill: 666</span>
+        </div>
+        <!-- Repita para os outros jogadores -->
+        <div class="rank">
+            <span class="top">4</span> <span class="nome">Player</span> <span class="dados">Skill: 555</span>
+        </div>
+        <div class="rank">
+            <span class="top">5</span> <span class="nome">Player</span> <span class="dados">Skill: 444</span>
+        </div>
+        <div class="rank">
+            <span class="top">6</span> <span class="nome">Player</span> <span class="dados">Skill: 333</span>
+        </div>
+        <div class="rank">
+            <span class="top">7</span> <span class="nome">Player</span> <span class="dados">Skill: 222</span>
+        </div>
+        <div class="rank">
+            <span class="top">8</span> <span class="nome">Player</span> <span class="dados">Skill: 111</span>
+        </div>
+        <div class="rank">
+            <span class="top">9</span> <span class="nome">Player</span> <span class="dados">Skill: 55</span>
+        </div>
+        <div class="rank">
+            <span class="top">10</span> <span class="nome">Player</span> <span class="dados">Skill: 22</span>
+        </div>
+    </section>
+
+    <section id="section2">
+        <h2>Top Levels</h2>
+        <div class="rank">
+            <span class="top">1</span> <span class="nome">GM Lobin</span> <span class="dados">Level:999</span>
+        </div>
+        <div class="rank">
+            <span class="top">2</span> <span class="nome">Player</span> <span class="dados">Level:150</span>
+        </div>
+        <div class="rank">
+            <span class="top">3</span> <span class="nome">Player</span> <span class="dados">Level:140</span>
+        </div>
+        <div class="rank">
+            <span class="top">4</span> <span class="nome">Player</span> <span class="dados">Level:130</span>
+        </div>
+        <div class="rank">
+            <span class="top">5</span> <span class="nome">Player</span> <span class="dados">Level:120</span>
+        </div>
+        <div class="rank">
+            <span class="top">6</span> <span class="nome">Player</span> <span class="dados">Level:110</span>
+        </div>
+        <div class="rank">
+            <span class="top">7</span> <span class="nome">Player</span> <span class="dados">Level:100</span>
+        </div>
+        <div class="rank">
+            <span class="top">8</span> <span class="nome">Player</span> <span class="dados">Level:90</span>
+        </div>
+        <div class="rank">
+            <span class="top">9</span> <span class="nome">Player</span> <span class="dados">Level:80</span>
+        </div>
+        <div class="rank">
+            <span class="top">10</span> <span class="nome">Player</span> <span class="dados">Level:70</span>
+        </div>
+        <!-- Repita para os outros jogadores -->
+    </section>
+
+    <section id="section3">
+        <h2>Top Gold</h2>
+        <!-- Adicione mais entradas conforme necessário -->
+        <div class="rank">
+            <span class="top">1</span> <span class="nome">GM Lobin</span> <span class="dados">Gold: 999.000.000 $</span>
+        </div>
+        <div class="rank">
+            <span class="top">2</span> <span class="nome">player</span> <span class="dados">Gold: 93.000.000 $</span>
+        </div>
+        <div class="rank">
+            <span class="top">3</span> <span class="nome">Player</span> <span class="dados">Gold: 10.000.000 $</span>
+        </div>
+        <div class="rank">
+            <span class="top">4</span> <span class="nome">Player</span> <span class="dados">Gold: 4.600.000 $</span>
+        </div>
+        <div class="rank">
+            <span class="top">5</span> <span class="nome">Player</span> <span class="dados">Gold: 3.200.000 $</span>
+        </div>
+        <div class="rank">
+            <span class="top">6</span> <span class="nome">Player</span> <span class="dados">Gold: 2.200.000 $</span>
+        </div>
+        <div class="rank">
+            <span class="top">7</span> <span class="nome">Player</span> <span class="dados">Gold: 1.700.000 $</span>
+        </div>
+        <div class="rank">
+            <span class="top">8</span> <span class="nome">Player</span> <span class="dados">Gold: 800.000 $</span>
+        </div>
+        <div class="rank">
+            <span class="top">9</span> <span class="nome">Player</span> <span class="dados">Gold: 600.000 $</span>
+        </div>
+        <div class="rank">
+            <span class="top">10</span> <span class="nome">Player</span> <span class="dados">Gold: 200.000 $</span>
+        </div>
+        <!-- Repita para os outros jogadores -->
+    </section>
+
+    <footer>
+        <p></p>
+    </footer>
+
+    <script>
+        // Adicione scripts JavaScript aqui
+        // Exemplo de script simples
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("O site foi carregado!");
+        });
+
+        function showSection(sectionId) {
+            // Oculta todas as seções
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+
+            // Mostra a seção clicada
+            var selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+</html>
