@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rucoy Online 5</title>
     <style>
-        /* Adicione estilos CSS aqui */
         body {
             font-family: 'Press Start 2P', cursive;
             margin: 0;
@@ -48,33 +47,33 @@
             padding: 20px;
             margin: 10px;
             display: none;
-            text-align: center; /* Centraliza o conteúdo das seções */
+            text-align: center; 
         }
 
         .rank {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr; /* 3 colunas iguais */
+            grid-template-columns: 1fr 1fr 1fr; 
             align-items: center;
             margin-bottom: 10px;
-            border-bottom: 1px solid #ddd; /* Adiciona uma linha separadora entre as entradas */
-            padding-bottom: 10px; /* Adiciona espaço entre as linhas */
+            border-bottom: 1px solid #ddd; 
+            padding-bottom: 10px; 
         }
 
         .rank span {
             font-size: 16px;
-            font-weight: bold; /* Deixa a fonte mais grossa */
+            font-weight: bold; 
         }
 
         .rank .top {
-            color: #000; /* Cor para a parte do top */
+            color: #000; 
         }
 
         .rank .nome {
-            color: #000; /* Cor para a parte do nome */
+            color: #000; 
         }
 
         .rank .dados {
-            color: #000; /* Cor para a parte dos dados */
+            color: #000; 
         }
 
         footer {
@@ -102,7 +101,7 @@
         <div class="rank">
             <span class="top">1</span> <span class="nome">GM Lobin</span> <span class="dados">Skill: 999</span>
         </div>
-        <!-- Adicione mais entradas conforme necessário -->
+        
         <div class="rank">
             <span class="top">2</span> <span class="nome">Player</span> <span class="dados">Skill: 888</span>
         </div>
@@ -110,7 +109,7 @@
         <div class="rank">
             <span class="top">3</span> <span class="nome">Player</span> <span class="dados">Skill: 666</span>
         </div>
-        <!-- Repita para os outros jogadores -->
+        
         <div class="rank">
             <span class="top">4</span> <span class="nome">Player</span> <span class="dados">Skill: 555</span>
         </div>
@@ -166,12 +165,12 @@
         <div class="rank">
             <span class="top">10</span> <span class="nome">Player</span> <span class="dados">Level:70</span>
         </div>
-        <!-- Repita para os outros jogadores -->
+        
     </section>
 
     <section id="section3">
         <h2>Top Gold</h2>
-        <!-- Adicione mais entradas conforme necessário -->
+       
         <div class="rank">
             <span class="top">1</span> <span class="nome">GM Lobin</span> <span class="dados">Gold: 999.000.000 $</span>
         </div>
@@ -202,7 +201,7 @@
         <div class="rank">
             <span class="top">10</span> <span class="nome">Player</span> <span class="dados">Gold: 200.000 $</span>
         </div>
-        <!-- Repita para os outros jogadores -->
+        
     </section>
 
     <footer>
@@ -210,20 +209,19 @@
     </footer>
 
     <script>
-        // Adicione scripts JavaScript aqui
-        // Exemplo de script simples
+       
         document.addEventListener("DOMContentLoaded", function() {
             console.log("O site foi carregado!");
         });
 
         function showSection(sectionId) {
-            // Oculta todas as seções
+         
             var sections = document.querySelectorAll('section');
             sections.forEach(function(section) {
                 section.style.display = 'none';
             });
 
-            // Mostra a seção clicada
+            
             var selectedSection = document.getElementById(sectionId);
             if (selectedSection) {
                 selectedSection.style.display = 'block';
